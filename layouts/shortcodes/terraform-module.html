@@ -1,0 +1,3 @@
+{{- $module := print "terraform" "-" (.Get "module") -}}
+{{- $data := index .Site.Data $module -}}
+<h1>{{ $data.name }}</h1>
